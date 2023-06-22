@@ -58,7 +58,7 @@ nav a:hover {
 .box {
   min-width: 300px;
   max-width: 400px;
-  /*border: 1.5px solid;*/
+  border: 1.5px solid;
   padding: 10px 2vw;
   display: flex;
   flex-direction: column;
@@ -148,8 +148,4 @@ max-width: 80vh;
   padding: 10vw;
   border: 1px solid;
   border-radius: 4px;
-}
-
-form input[type="text"], {
-border-radius: solid red;
 }
