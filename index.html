@@ -12,7 +12,7 @@
       <h3>Das Beste Bio Öl</h3>
       <nav>
         <ul>
-          <li><a href="produkt.html" class="active">Produkt</a></li>
+          <li><a href="index.html" class="active">Produkt</a></li>
           <li><a href="ueber-uns.html">Über uns</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
@@ -150,12 +150,13 @@
           <h2 class="title">Arbequina III</h2>
           <p class="description">
             Dieses Olivenöl stammt aus Spanien und wird aus den Arbequina-Oliven
-            hergestellt. Es zeichnet sich durch ein mildes, fruchtiges Aroma
+            hergestellt. Es zeichnet sich durch ein mildes,<span id="dots">...</span><span id="more"> fruchtiges Aroma
             aus, das an grüne Äpfel und Mandeln erinnert. Es hat eine leichte,
             süße Note und eine sanfte Schärfe im Abgang. Dieses Olivenöl eignet
             sich gut für die Zubereitung von Salaten, Fischgerichten und
-            Desserts.
+            Desserts.</span>
           </p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
         </div>
         <div>
           <p class="price">50,00 €</p>
@@ -184,5 +185,22 @@
         </div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
   </body>
 </html>
