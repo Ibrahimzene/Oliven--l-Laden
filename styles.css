@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: yellow !important;
+  background-color: yellow;
 }
 
 .container {
